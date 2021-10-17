@@ -41,6 +41,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: 22
           script: |
-            sudo chmod -R 755 /path/in/your/server
+            sudo chmod -R 755 /var/www/html
             sudo chown -R www-data:www-data /var/www/html
             sudo setfacl -R -m u:ubuntu:rwx /var/www/html
