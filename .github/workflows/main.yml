@@ -1,4 +1,4 @@
-name: Identifier Name
+name: Testing
 on:
   push:
     branches: [ main ]
