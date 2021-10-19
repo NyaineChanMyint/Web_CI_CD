@@ -15,7 +15,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.NAME }}
           key: ${{ secrets.KEY }}
-          port: 22
+          port: ${{ secrets.PORT }}
           script: |
             sudo chmod -R 755 /var/www/html
             sudo chown -R ubuntu:ubuntu /var/www/html
