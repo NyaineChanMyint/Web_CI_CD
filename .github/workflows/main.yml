@@ -15,7 +15,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.NAME }}
           key: ${{ secrets.KEY }}
-          passord : ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
             sudo chmod -R 755 /var/www/html
