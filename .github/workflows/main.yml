@@ -19,7 +19,6 @@ jobs:
           script: |
             sudo chmod -R 755 /var/www/html
             sudo chown -R ubuntu:ubuntu /var/www/html
-            sudo setfacl -R -m u:www-data:rwx /var/www/html 
 
       - uses: actions/checkout@v2
       - name: Deploy source-code
@@ -43,4 +42,4 @@ jobs:
           script: |
             sudo chmod -R 755 /var/www/html
             sudo chown -R www-data:www-data /var/www/html
-            sudo setfacl -R -m u:ubuntu:rwx /var/www/html
+            
